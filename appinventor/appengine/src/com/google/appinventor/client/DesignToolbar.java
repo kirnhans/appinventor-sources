@@ -466,4 +466,9 @@ public class DesignToolbar extends Toolbar {
   public DesignProject getCurrentProject() {
     return currentProject;
   }
+
+  public static String[] getScreenNames() {
+    DesignToolbar designToolbar = Ode.getInstance().getDesignToolbar();
+    return designToolbar.getDropDownListItems(WIDGET_NAME_SCREENS_DROPDOWN);
+  }
 }

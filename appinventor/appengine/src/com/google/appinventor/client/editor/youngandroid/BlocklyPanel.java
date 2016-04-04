@@ -809,6 +809,16 @@ public class BlocklyPanel extends HTMLPanel {
     return TranslationDesignerPallete.getCorrespondingString(key);
   }
 
+  public static String[][] getScreenNames() {
+    String[] names = DesignToolbar.getScreenNames();
+    String[][] screenTuple = new String[names.length][2];
+    for (int i=0;i<names.length;i++) {
+      screenTuple[i][0] = names[i];
+      screenTuple[i][1] = names[i];
+    }
+    return screenTuple;
+  }
+
   // ------------ Native methods ------------
 
   /**
@@ -871,6 +881,8 @@ public class BlocklyPanel extends HTMLPanel {
       $entry(@com.google.appinventor.client.editor.youngandroid.BlocklyPanel::getBackpack());
     $wnd.BlocklyPanel_setBackpack =
       $entry(@com.google.appinventor.client.editor.youngandroid.BlocklyPanel::setBackpack(Ljava/lang/String;));
+    $wnd.BlocklyPanel_getScreenNames =
+      $entry(@com.google.appinventor.client.editor.youngandroid.BlocklyPanel::getScreenNames());
   }-*/;
 
   private native void initJS() /*-{
