@@ -612,8 +612,7 @@ Blockly.Blocks['controls_openAnotherScreenDropDown'] = {
     this.appendDummyInput()
         .appendField(Blockly.Msg.LANG_CONTROLS_OPEN_ANOTHER_SCREEN_TITLE)
         .appendField(Blockly.Msg.LANG_CONTROLS_OPEN_ANOTHER_SCREEN_INPUT_SCREENNAME)
-        .appendField(new Blockly.FieldDropdown(window.parent.BlocklyPanel_getScreenNames()), "SCREEN_PICK")
-        .setAlign(Blockly.ALIGN_RIGHT)
+        .appendField(new Blockly.FieldDropdown(window.parent.BlocklyPanel_getScreenNames()), "SCREEN_PICK");
     this.setPreviousStatement(true);
     this.setTooltip(Blockly.Msg.LANG_CONTROLS_OPEN_ANOTHER_SCREEN_TOOLTIP);
   },
