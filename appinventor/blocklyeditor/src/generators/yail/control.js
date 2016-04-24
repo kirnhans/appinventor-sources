@@ -157,7 +157,6 @@ Blockly.Yail['controls_openAnotherScreen'] = function() {
 Blockly.Yail['controls_openAnotherScreenDropDown'] = function() {
   // Open another screen
   var argument0 = this.getFieldValue('SCREEN_PICK');
-  argument0 = "\"" + argument0 + "\"";
   var code = Blockly.Yail.YAIL_CALL_YAIL_PRIMITIVE + "open-another-screen" + Blockly.Yail.YAIL_SPACER;
   code = code + Blockly.Yail.YAIL_OPEN_COMBINATION + Blockly.Yail.YAIL_LIST_CONSTRUCTOR + Blockly.Yail.YAIL_SPACER;
   code = code + argument0 + Blockly.Yail.YAIL_CLOSE_COMBINATION;

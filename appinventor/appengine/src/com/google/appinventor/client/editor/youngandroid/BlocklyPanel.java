@@ -809,12 +809,22 @@ public class BlocklyPanel extends HTMLPanel {
     return TranslationDesignerPallete.getCorrespondingString(key);
   }
 
+
+  /**
+   *  To get the names of screens for "OpenAnotherScreen block" in control.js
+   *
+   *  @return an array of tuples of screen names
+   */
   public static String[][] getScreenNames() {
     String[] names = DesignToolbar.getScreenNames();
     String[][] screenTuple = new String[names.length][2];
+    //This is required for a dropdown menu, which takes tuples.
+    //The first item is the string displayed
+    //The second item is the actual string passed back when the menu is clicked
+    //It needs quotes because of how the OpenAnotherScreen block functions.
     for (int i=0;i<names.length;i++) {
       screenTuple[i][0] = names[i];
-      screenTuple[i][1] = names[i];
+      screenTuple[i][1] = "\"" + names[i] + "\"";
     }
     return screenTuple;
   }

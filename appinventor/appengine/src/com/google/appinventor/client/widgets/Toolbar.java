@@ -146,6 +146,7 @@ public class Toolbar extends Composite {
 
   /**
    * Gets the names of menu items
+   * Originally created for the "OpenAnotherScreen block" in control.js
    *
    * @param dropWidgetName name of the drop-down widget
    * @return the names of the specified menu items - if no matching menu item to widget, will return an empty array
