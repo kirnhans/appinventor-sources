@@ -603,6 +603,7 @@ Blockly.Blocks['controls_openAnotherScreen'] = {
   typeblock: [{translatedName: Blockly.Msg.LANG_CONTROLS_OPEN_ANOTHER_SCREEN_TITLE}]
 };
 
+//Same as openAnotherScreen above but with a dropdown list for screens to make selection more intuitive.
 Blockly.Blocks['controls_openAnotherScreenDropDown'] = {
   // Open another screen
   category: 'Control',
@@ -639,6 +640,7 @@ Blockly.Blocks['controls_openAnotherScreenWithStartValue'] = {
   typeblock: [{translatedName: Blockly.Msg.LANG_CONTROLS_OPEN_ANOTHER_SCREEN_WITH_START_VALUE_TITLE}]
 };
 
+//Same as openAnotherScreenWithStartValue above but with a dropdown list for screens to make selection more intuitive.
 Blockly.Blocks['controls_openAnotherScreenWithStartValueDropDown'] = {
   // Open another screen with start value
   category: 'Control',
