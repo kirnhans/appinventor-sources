@@ -650,7 +650,8 @@ Blockly.Blocks['controls_openAnotherScreenWithStartValueDropDown'] = {
     this.appendDummyInput()
         .appendField(Blockly.Msg.LANG_CONTROLS_OPEN_ANOTHER_SCREEN_WITH_START_VALUE_TITLE)
         .appendField(Blockly.Msg.LANG_CONTROLS_OPEN_ANOTHER_SCREEN_WITH_START_VALUE_INPUT_SCREENNAME)
-        .appendField(new Blockly.FieldDropdown(window.parent.BlocklyPanel_getScreenNames), "SCREEN_PICK");
+        .appendField(new Blockly.FieldDropdown(window.parent.BlocklyPanel_getScreenNames), "SCREEN_PICK")
+        .setAlign(Blockly.ALIGN_RIGHT);
     this.appendValueInput('STARTVALUE')
         .appendField(Blockly.Msg.LANG_CONTROLS_OPEN_ANOTHER_SCREEN_WITH_START_VALUE_INPUT_STARTVALUE)
         .setAlign(Blockly.ALIGN_RIGHT);
