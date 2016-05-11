@@ -823,8 +823,9 @@ public class BlocklyPanel extends HTMLPanel {
     //The second item is the actual string passed back when the menu is clicked
     //It needs quotes because of how the OpenAnotherScreen block functions.
     for (int i=0;i<names.length;i++) {
-      screenTuple[i][0] = names[i];
-      screenTuple[i][1] = "\"" + names[i] + "\"";
+      String nameWithQuotes = "\"" + names[i] + "\"";
+      screenTuple[i][0] = nameWithQuotes;
+      screenTuple[i][1] = nameWithQuotes;
     }
     return screenTuple;
   }
